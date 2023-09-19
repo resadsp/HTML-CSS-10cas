@@ -1,0 +1,37 @@
+.forma{
+    margin-left: 1%;
+    margin-right: 1%;
+    height: auto;
+    width: 98%;
+    border: 1px solid blue;
+    padding: 15px;
+   
+
+}
+
+.forma h3{
+    text-align: center;
+    color: blue;
+}
+
+.forma h4{
+    text-align: center;
+    color: blue;
+}
+
+@media screen and (max-width:300px){
+    .forma{
+        width: 300px;
+        height: auto;
+
+       
+    }
+}
+
+legend{
+    background-color: aquamarine;
+}
+
+fieldset{
+    background-color: antiquewhite;
+}

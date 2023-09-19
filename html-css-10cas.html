@@ -8,6 +8,107 @@
     <title>FORME</title>
 </head>
 <body>
-    
+   <div class="forma"><h3>FORMA I NJENE FUNKCIJE</h3>
+        <form action="" target="" autocomplete="off" method=""><br> <!-- forma se pise izmedju kljucnih reci form. 
+            atribut action definise radnju koja ce se izvrsiti kada se obrazac posalje. 
+            target odredjuje gde ce da se prikaze odgovor koji je primljen nakon slanja obrasca.
+            autocomplete je na on po automatizmu i nudi korisniku vec ranije unosene odgovore kao mogucnost odabira
+            method odredjuje http metod koji ce se koristiti prilikom slanja obrasca. za url je method get a za http je method post-->
+           <label for="ime">Unesite vase ime:</label><br> <!-- label definise oznaku za mnoge elemente obrasca. atribut for kod labela i id kod inputa trebaju biti jednaki -->
+           <input type="text" name="ime" id="ime" placeholder="Ime..."><br><br><!-- html input je najcesce koriscen element forme -->
+           <label for="prezime">Unesite vase prezime:</label><br>
+           <input type="text" name="prezime" id="prezime" placeholder="Prezime..."><br><br>
+           <label for="godinarodjena">Unesite broj vasih godina:</label><br>
+           <input type="number" name="godinarodjena" id="godinarodjena" min="10" max="100" placeholder="20"><br><br>
+           <label for="">Odaberite oblast koju zelite da pohadajte:</label><br>
+           <input type="radio" name="oblast" id="html" value="html">
+           <label for="html">HTML</label><br>
+           <input type="radio" name="oblast" id="css" value="css">
+           <label for="css">CSS</label><br>
+           <input type="radio" name="oblast" id="js" value="js">
+           <label for="js">JS</label><br>
+           <input type="radio" name="oblast" id="rejact" value="rejact">
+           <label for="rejact">JS rejact</label><br><br>
+           <label for="">Sa kojim programskim jezicima ste imali iskustva?</label><br>
+           <input type="checkbox" id="pascal" name="pascal">
+           <label for="pascal">PASCAL</label><br>
+           <input type="checkbox" name="c" id="c">
+           <label for="c">C</label><br>
+           <input type="checkbox" name="c++" id="c++">
+           <label for="c++">C++</label><br>
+           <input type="checkbox" name="php" id="php">
+           <label for="php">PHP</label><br>
+           <input type="checkbox" name="html/css" id="html/css">
+           <label for="html/css">HTML/CSS</label><br>
+           <input type="checkbox" name="js" id="js">
+           <label for="js">JS</label><br><br>
+           <label for="omiljenaboja">Odaberite svoju omiljenu boju:</label>
+           <input type="color" name="omiljenaboja" id="omiljenaboja" value="#ff0000"><br><br>
+           <label for="datum">Odaberite datum kada zelite da zakazete konsultacije</label>
+           <input type="date" name="datum" id="datum" min="2023-10-01" max="2023-10-25"><br><br>
+           <label for="grad">Izaberi grad u kojem zelis da pohadjas nastavu:</label>
+           <select name="grad" id="grad" size="1">
+            <option value="np">Novi Pazar</option>
+            <option value="bg" selected>Beograd</option>
+            <option value="ns">Novi Sad</option>
+            <option value="kg">Kragujevac</option>
+           </select><br><br>
+           <label for="biografija">Unesite kratku biogfrafiju o sebi:</label><br>
+           <textarea name="biografija" id="biogfrafija" cols="100" rows="3" placeholder="Predstavite nam sebe u nekoliko reci..."></textarea><br><br>
+           <fieldset style="border: 2px solid black;">
+            <legend>Korsnicki nalog</legend><br>
+            <label for="korisnik">Napravite vase korisnicko ime:</label><br>
+            <input type="text" id="korisnik" name="korisnik"><br><br>
+            <label for="pasvord">Napravite vas pasvord:</label><br>
+            <input type="password" id="pasvord" name="pasvord"><br><br>
+            <label for="email">Unesite vas email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+           </fieldset><br><br>
+           <label for="jezik">Odaberite programski jezik sa kojim zelite da zapocnete skolovanje:</label>
+           <input list="jezik" name="jezik">
+           <datalist id="jezik">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JS">
+            <option value="JS Rejact">
+           </datalist><br><br>
+           <label for="">Odaberite koliko dana u skolskoj godini zelite da slusate predavanja kod nas: </label>
+           1<input type="range" id="range" name="range" step="5">250 <br><br>
+           <label for="biografija">Ovde nam okacite svoju biografiju:</label>
+           <input type="file" id="biogfrafija" name="biografija"><br><br>
+           <label for="mesec">U kojem mesecu zelite da zapocnete svoju obuku:</label>
+           <input type="month" id="mesec" name="mesec"><br><br>
+           <label for="telefon">Unesite broj telefona na koji zelite da vas kontaktiramo:</label>
+           <input type="tel" id="telefon" name="telefon" placeholder="062 266 996" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}"><br><br>
+           <label for="vreme">Odaberite tacno vreme u koliko zelimo da vas kontaktiramo:</label>
+           <input type="time" name="vreme" id="vreme"><br><br>
+           <label for="nedelja">Odaberite nedelju i kojoj zelite da se odrzi prvi kolokvijum iz datog predmeta:</label>
+           <input type="week" id="nedelja" name="nedelja"><br><br>
+           <label for="pretraga">Search:</label>
+           <input type="search" id="pretraga" name="pretraga"><br><br>
+           <h4>INPUT ATRIBUTI</h4>
+           <label for="unos">Vase ime:</label>
+           <input type="text" id="unos" name="unos" value="Resad"><br><br>
+           <label for="vecuneto">Vase prezime samo za citanje:</label>
+           <input type="text" id="vecuneto" name="vecuneto" value="Spahovic" readonly><br><br>
+           <label for="gradd">Vas grad:</label>
+           <input type="text" id="gradd" name="gradd" value="Novi Pazar" disabled><br><br>
+           <label for="pin">PIN</label>
+           <input type="text" id="pin" name="pin" size="4" maxlength="4"><br><br>
+           <label for="multi">Multiple sluzi da se izabere vise fajlova ili mejlova prilikom odabira uz drzanje ctr+shift</label>
+           <input type="file" name="multi" id="multi" multiple><br><br>
+           <label for="postanskibroj">Unesite postanski broj vaseg grada:</label>
+           <input type="text" id="postanskibroj" name="postanskibroj" pattern="[0-9]{5}" size="5" maxlength="5" title="Unesite vazeci broj od 5 cifara"><br><br>
+           <label for="obavezan">Unesite Vas JMBG:</label>
+           <input type="text" id="obavezan" name="obavezan" required pattern="[0-9]{13}" title="Unesite 13 cifara vaseg JMBG broja" maxlength="13" size="13">
+           <br><br>
+           <input type="submit" value="POSALJI">
+           <input type="submit" formtarget="_blank" value="POSALJI U NOVOM PROZORU">
+           <input type="reset" value="RESETUJ PODATKE">
+  
+        </form>
+    </div>
+
+<script src="html-css-10cas.js"></script>
 </body>
 </html>
